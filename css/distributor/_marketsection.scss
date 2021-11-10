@@ -1,0 +1,75 @@
+.market_section{
+    width: 100%;
+    position: relative;
+    .slide_item{
+        width: 100%;
+        height: 638px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+        .container{
+            position: relative;
+        }
+       h2{
+           font-family: var(--heavy-font);
+           font-size: 60px;
+           line-height: 69px;
+           margin-bottom: 32px;
+       }
+       p{
+           font-size: 16px;
+           width: 34%;
+           color: #7f7f7f;
+       }
+       .custom_button{
+           margin-top: 43px;
+       }
+    }
+  
+}
+
+@media only screen and (max-width:991px){
+    .market_section {
+        .slide_item {
+            height: 444px;
+            text-align: center;
+            .container{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            h2{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            p{
+                width: 76%;
+               
+            }
+        }
+    }
+   
+}
+
+
+@media only screen and (max-width:450px){
+    .market_section {
+        .slide_item {
+            height: 444px;
+            h2{
+                font-size: 34px;
+                line-height: 42px;
+            }
+            p{
+                width: 76%;
+                font-size: 14px;
+            }
+        }
+       
+    }
+}
