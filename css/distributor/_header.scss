@@ -3,6 +3,24 @@
 header{
     width: 100%;
     box-shadow: rgba(156,156,156,.75) 0 0 5px;
+    &.active{
+        .menu_area{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            background-color: var(--primary-color);
+            box-shadow: rgba(156,156,156,.75) 0 0 5px;
+            .container{
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                .logo{
+                    display: block;
+                }
+            }
+        }
+    }
     .top{
         width: 100%;
         background-color: var(--secondary-color);
@@ -43,7 +61,7 @@ header{
                 padding-right: 20px;
                 position: relative;
                 &::after{
-                    background-image: url(../../images/log_arrow.png);
+                    background-image: url(../images/log_arrow.png);
                     width: 9px;
                     height: 6px;
                     background-repeat: no-repeat;
@@ -87,6 +105,7 @@ header{
             width: 25%;
             .search{
                 margin-right: 35px;
+                cursor: pointer;
             }
             .cart{                               
                 font-size: 19px;
@@ -118,6 +137,9 @@ header{
     .menu_area{
         width: 100%;        
         border-top: #e0e0e0 1px solid;
+        .logo{
+            display: none;
+        }
         
         .nav{
             position: relative;
@@ -193,10 +215,21 @@ header{
 
 @media only screen and (max-width:779px){
     header {
+        &.active{
+            .logo_area{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                background-color: var(--primary-color);
+                box-shadow: rgba(156,156,156,.75) 0 0 5px;
+                }
+        }
         .logo_area{
             padding: 35px 60px 35px 0;
         }
         .menu_area {
+            display: none;
             .nav {
                 display: none !important;
                 

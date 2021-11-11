@@ -8,17 +8,17 @@ $('.mobile_menu').slicknav({
 });
 
 /* On Scroll Js */
-/*window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    var header= document.getElementById("header");
+    var header= document.getElementById("header")
     header.classList.add('active');
   } else {
-    var header= document.getElementById("header");
+    var header= document.getElementById("header")
     header.classList.remove('active');
   }
-}*/
+}
 /* On Scroll Js */
 
 
@@ -27,11 +27,7 @@ var owl = $('#banner-slider');
 owl.owlCarousel({
      loop: false,
      dots: true,
-     nav:false,
-     navText: [
-         ("<img src='images/arrow1.png' />"),
-         ("<img src='images/arrow2.png' />")
-     ],
+     nav:false,     
      autoplay:true,
      center:false,
      margin: 0,
@@ -56,11 +52,7 @@ var owl = $('.product-slider');
 owl.owlCarousel({
      loop: false,
      dots: true,
-     nav:false,
-     navText: [
-         ("<img src='images/arrow1.png' />"),
-         ("<img src='images/arrow2.png' />")
-     ],
+     nav:false,     
      autoplay:true,
      center:false,
      margin: 0,
